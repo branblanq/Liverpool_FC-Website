@@ -86,80 +86,15 @@
 
         <section class="mb-5">
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h2 class="fw-bold mb-0">Upcoming Fixtures</h2>
-                <span class="text-danger fw-semibold">Updated for 2026/27</span>
+                <div>
+                    <h2 class="fw-bold mb-1">Upcoming Liverpool Fixtures</h2>
+                    <small id="fixturesStatus" class="text-muted" aria-live="polite">Loading Liverpool's schedule…</small>
+                </div>
+                <button id="refreshFixtures" class="btn btn-outline-danger btn-sm" type="button">Refresh</button>
             </div>
 
-            <div class="fixture-list">
-                <div class="fixture-card">
-                    <div class="fixture-date">Aug 16</div>
-                    <div class="fixture-content">
-                        <span class="competition">Premier League</span>
-                        <h4>Liverpool vs Arsenal</h4>
-                        <p>Anfield • 17:30</p>
-                    </div>
-                    <span class="fixture-tag home">Home</span>
-                </div>
-
-                <div class="fixture-card">
-                    <div class="fixture-date">Aug 23</div>
-                    <div class="fixture-content">
-                        <span class="competition">Premier League</span>
-                        <h4>Manchester City vs Liverpool</h4>
-                        <p>Etihad Stadium • 16:00</p>
-                    </div>
-                    <span class="fixture-tag away">Away</span>
-                </div>
-
-                <div class="fixture-card">
-                    <div class="fixture-date">Sep 13</div>
-                    <div class="fixture-content">
-                        <span class="competition">Champions League</span>
-                        <h4>Liverpool vs AC Milan</h4>
-                        <p>Anfield • 20:00</p>
-                    </div>
-                    <span class="fixture-tag home">Home</span>
-                </div>
-
-                <div class="fixture-card">
-                    <div class="fixture-date">Sep 27</div>
-                    <div class="fixture-content">
-                        <span class="competition">Premier League</span>
-                        <h4>Liverpool vs Chelsea</h4>
-                        <p>Anfield • 14:00</p>
-                    </div>
-                    <span class="fixture-tag home">Home</span>
-                </div>
-
-                <div class="fixture-card">
-                    <div class="fixture-date">Oct 04</div>
-                    <div class="fixture-content">
-                        <span class="competition">Champions League</span>
-                        <h4>Real Madrid vs Liverpool</h4>
-                        <p>Santiago Bernabéu • 20:00</p>
-                    </div>
-                    <span class="fixture-tag away">Away</span>
-                </div>
-
-                <div class="fixture-card">
-                    <div class="fixture-date">Nov 01</div>
-                    <div class="fixture-content">
-                        <span class="competition">Premier League</span>
-                        <h4>Liverpool vs Everton</h4>
-                        <p>Anfield • 12:30</p>
-                    </div>
-                    <span class="fixture-tag home">Home</span>
-                </div>
-
-                <div class="fixture-card">
-                    <div class="fixture-date">Nov 22</div>
-                    <div class="fixture-content">
-                        <span class="competition">Premier League</span>
-                        <h4>Tottenham Hotspur vs Liverpool</h4>
-                        <p>Tottenham Hotspur Stadium • 19:45</p>
-                    </div>
-                    <span class="fixture-tag away">Away</span>
-                </div>
+            <div id="liverpoolFixtures" class="fixture-list" aria-live="polite">
+                <div class="fixture-card">Fetching the latest fixtures…</div>
             </div>
         </section>
 
