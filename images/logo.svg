@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Liverpool FC logo">
+  <rect width="128" height="128" rx="18" fill="#d81f26"/>
+  <circle cx="64" cy="64" r="46" fill="#f8f9fa" opacity="0.16"/>
+  <path d="M30 40h68v10H30zm0 18h68v10H30zm0 18h68v10H30z" fill="#ffffff"/>
+  <text x="64" y="90" text-anchor="middle" font-size="21" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#ffffff">LFC</text>
+</svg>
