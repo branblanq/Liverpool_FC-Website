@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <img src="images/logo.png" alt="LFC Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <img src="images/Logo.png" alt="LFC Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
                 Liverpool FC
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -27,7 +27,7 @@
                     <li class="nav-item"><a class="nav-link" href="squad.html">Squad</a></li>
                     <li class="nav-item"><a class="nav-link" href="fixtures.html">Fixtures</a></li>
                     <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Fan Zone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="anyother.html">AnyOther</a></li>
                 </ul>
             </div>
         </div>
@@ -36,12 +36,104 @@
     <!-- PAGE-SPECIFIC CONTENT GOES HERE -->
     <main class="container py-5">
         <!-- Each member works inside here -->
-    </main>
+         <div class="p-5 mb-4 bg-danger text-white rounded-3 shadow">
+    <div class="container-fluid py-3 text-center">
+        <h1 class="display-4 fw-bold">Welcome to Liverpool FC</h1>
+        <p class="fs-4">You'll Never Walk Alone. Explore match highlights, team squad, and club history.</p>
+        <a href="squad.html" class="btn btn-warning btn-lg fw-bold text-dark me-2">Explore the Squad</a>
+        <a href="fixtures.html" class="btn btn-outline-light btn-lg">View Fixtures</a>
+    </div>
+</div>
+
+<h2 class="text-danger fw-bold mb-3">Season Highlights</h2>
+<div id="lfcCarousel" class="carousel slide mb-5 shadow rounded overflow-hidden" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/banner.jpg" class="d-block w-100" alt="Match Action" style="max-height: 400px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Anfield Matchday</h5>
+                <p>Experience the atmosphere at Anfield.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#lfcCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#lfcCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- MATCHDAY & NEWS HIGHLIGHTS SECTION -->
+<div class="row g-4 mb-5">
+    
+    <!-- 1. PREVIOUS MATCH RESULT -->
+    <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-header bg-dark text-white fw-bold text-center">
+                <small class="text-uppercase tracking-wider">Previous Match</small>
+            </div>
+            <!-- MATCH PHOTO -->
+            <img src="images/Isak.jpg" class="card-img-top" alt="Previous Match Action" style="height: 380px; object-fit: cover;">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+                <div>
+                    <span class="badge bg-danger mb-2">Premier League</span>
+                    <h5 class="card-title fw-bold">Bournemouth 0 - 1 Liverpool</h5>
+                    <p class="card-text text-muted small">Vitality Stadium | Sept 20, 2026</p>
+                    <p class="card-text small">Goal scored by Isak who secured a dominant victory for the vistors.</p>
+                </div>
+                <a href="fixtures.html" class="btn btn-sm btn-outline-danger mt-3">Match Details</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. UPCOMING MATCH -->
+    <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-header bg-danger text-white fw-bold text-center">
+                <small class="text-uppercase">Next Match</small>
+            </div>
+            <!-- STADIUM / MATCHDAY PHOTO -->
+            <img src="images/nextmatch.jpg" class="card-img-top" alt="Emirates Stadium" style="height: 380px; object-fit: cover;">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+                <div>
+                    <span class="badge bg-warning text-dark mb-2">Premier League</span>
+                    <h5 class="card-title fw-bold">Liverpool vs Manchester City</h5>
+                    <p class="card-text text-muted small">Anfield Stadium | Sat, 18:30 GMT</p>
+                    <p class="card-text small">Crucial fixture as the Reds look to extend their unbeaten run down the road.</p>
+                </div>
+                <a href="fixtures.html" class="btn btn-sm btn-danger mt-3">View All Fixtures</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. CLUB NEWS / SPOTLIGHT -->
+    <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-header bg-dark text-white fw-bold text-center">
+                <small class="text-uppercase">Club Archives</small>
+            </div>
+            <!-- PRESS CONFERENCE / TRAINING PHOTO -->
+            <img src="images/trophy collection.jpg" class="card-img-top" alt="trophy" style="height: 380px; object-fit: cover;">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+                <div>
+                    <span class="badge bg-secondary mb-2">Team History</span>
+                    <h5 class="card-title fw-bold">Trophies and Honours</h5>
+                    <p class="card-text small">Liverpool Football Club have secured 52 trophies including Premier League, Champions and European League trophies plus many other different trophies in History.</p>
+                </div>
+                <a href="history.html" class="btn btn-sm btn-outline-dark mt-3">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</main>
 
     <!-- Shared Footer -->
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <div class="container">
-            <p class="mb-1">&copy; 2026 Liverpool FC Fan Project. You'll Never Walk Alone.</p>
+            <p class="mb-1">&copy; 2026 Liverpool Football Club.  You'll Never Walk Alone.</p>
             <small class="text-secondary">Designed with Bootstrap 5</small>
         </div>
     </footer>
