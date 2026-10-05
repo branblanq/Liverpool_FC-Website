@@ -77,6 +77,26 @@ body {
     text-align: center;
 }
 
+.stat-card--league {
+    background: #fff0f1;
+    border-color: #f3c8cc;
+}
+
+.stat-card--europe {
+    background: #fff7df;
+    border-color: #f0dfa9;
+}
+
+.stat-card--cups {
+    background: #ffe8e5;
+    border-color: #f2c2bb;
+}
+
+.stat-card--anfield {
+    background: #fff3e8;
+    border-color: #efd0b5;
+}
+
 .stat-label {
     display: block;
     color: #6c757d;
@@ -95,6 +115,38 @@ body {
 .fixture-list {
     display: grid;
     gap: 1rem;
+}
+
+.league-table-wrap {
+    border: 1px solid rgba(13, 36, 68, 0.1);
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.league-table {
+    min-width: 620px;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.league-table thead th {
+    padding: 0.85rem 1rem;
+    background: #f8f1ef;
+    color: #6c3037;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.league-table tbody td {
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+}
+
+.league-table .league-table-liverpool td {
+    background: #fff0f1;
+    color: #8f1020;
+    font-weight: 700;
 }
 
 .fixture-card {

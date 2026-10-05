@@ -55,28 +55,28 @@
 
         <section class="row g-4 mb-5">
             <div class="col-md-3">
-                <div class="stat-card">
+                <div class="stat-card stat-card--league">
                     <span class="stat-label">Premier League</span>
                     <h3>38</h3>
                     <small>Matches</small>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="stat-card">
+                <div class="stat-card stat-card--europe">
                     <span class="stat-label">Europe</span>
                     <h3>8</h3>
                     <small>Champions League games</small>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="stat-card">
+                <div class="stat-card stat-card--cups">
                     <span class="stat-label">Domestic Cups</span>
                     <h3>7</h3>
                     <small>Potential rounds</small>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="stat-card">
+                <div class="stat-card stat-card--anfield">
                     <span class="stat-label">Home Ground</span>
                     <h3>Anfield</h3>
                     <small>Red wall</small>
@@ -163,6 +163,38 @@
             </div>
         </section>
 
+        <section class="league-table-section mb-5" aria-labelledby="leagueTableHeading">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+                <div>
+                    <h2 id="leagueTableHeading" class="fw-bold mb-1">Live Premier League Table</h2>
+                    <small id="leagueTableStatus" class="text-muted" aria-live="polite">Loading current standings…</small>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <a class="text-danger fw-semibold" href="https://www.premierleague.com/tables" target="_blank" rel="noopener noreferrer">Open official table</a>
+                    <button id="refreshLeagueTable" class="btn btn-outline-danger btn-sm" type="button">Refresh</button>
+                </div>
+            </div>
+            <div class="table-responsive league-table-wrap">
+                <table class="table league-table mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">Pos</th>
+                            <th scope="col">Club</th>
+                            <th scope="col">P</th>
+                            <th scope="col">W</th>
+                            <th scope="col">D</th>
+                            <th scope="col">L</th>
+                            <th scope="col">GD</th>
+                            <th scope="col">Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leagueTableBody">
+                        <tr><td colspan="8" class="text-center py-4">Fetching the latest standings…</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <section class="row g-4">
             <div class="col-lg-6">
                 <div class="panel-card">
@@ -198,5 +230,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
