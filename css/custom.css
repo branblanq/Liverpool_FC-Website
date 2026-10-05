@@ -1,0 +1,295 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-panel,
+.panel-card,
+.history-card,
+.honour-card,
+.stat-card,
+.fixture-card {
+    background: #ffffff;
+    border: 1px solid rgba(13, 36, 68, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.hero-panel {
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.08), rgba(13, 36, 68, 0.03));
+}
+
+.season-badge {
+    display: inline-block;
+    background: #dc3545;
+    color: white;
+    border-radius: 999px;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+}
+
+.summary-box {
+    background: #0d1b2a;
+    color: white;
+    border-radius: 18px;
+    padding: 1.5rem 1.2rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 220px;
+    text-align: left;
+}
+
+.summary-league {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.summary-competitions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+}
+
+.summary-competitions span {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #f8f9fa;
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.stat-card {
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.stat-card--league {
+    background: #fff0f1;
+    border-color: #f3c8cc;
+}
+
+.stat-card--europe {
+    background: #fff7df;
+    border-color: #f0dfa9;
+}
+
+.stat-card--cups {
+    background: #ffe8e5;
+    border-color: #f2c2bb;
+}
+
+.stat-card--anfield {
+    background: #fff3e8;
+    border-color: #efd0b5;
+}
+
+.stat-label {
+    display: block;
+    color: #6c757d;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+}
+
+.stat-card h3 {
+    margin: 0;
+    color: #bd0d1d;
+    font-weight: 800;
+}
+
+.fixture-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.league-table-wrap {
+    border: 1px solid rgba(13, 36, 68, 0.1);
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.league-table {
+    min-width: 620px;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.league-table thead th {
+    padding: 0.85rem 1rem;
+    background: #f8f1ef;
+    color: #6c3037;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.league-table tbody td {
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+}
+
+.league-table .league-table-liverpool td {
+    background: #fff0f1;
+    color: #8f1020;
+    font-weight: 700;
+}
+
+.fixture-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.1rem 1.2rem;
+}
+
+.fixture-date {
+    min-width: 78px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 700;
+    color: #0d1b2a;
+    padding: 0.8rem 0.5rem;
+}
+
+.fixture-content {
+    flex: 1;
+}
+
+.fixture-content h4 {
+    font-size: 1.15rem;
+    margin: 0.2rem 0;
+}
+
+.fixture-content p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.competition {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: #dc3545;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.fixture-tag {
+    border-radius: 999px;
+    padding: 0.45rem 0.8rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.fixture-tag.home {
+    background: rgba(220, 53, 69, 0.12);
+    color: #b30f20;
+}
+
+.fixture-tag.away {
+    background: rgba(13, 36, 68, 0.08);
+    color: #0d1b2a;
+}
+
+.panel-card {
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.rivalry-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(13, 36, 68, 0.08);
+}
+
+.rivalry-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.history-hero {
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(13, 36, 68, 0.03), rgba(220, 53, 69, 0.08));
+    border-radius: 18px;
+}
+
+.history-card,
+.honour-card {
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.history-year,
+.timeline-year {
+    color: #dc3545;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.timeline {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 1.2rem;
+    background: white;
+    border: 1px solid rgba(13, 36, 68, 0.08);
+    border-radius: 16px;
+    padding: 1.2rem;
+}
+
+.timeline-item .timeline-year {
+    min-width: 100px;
+    padding-top: 0.2rem;
+}
+
+.honour-card {
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff, #f8f9fa);
+}
+
+.honour-card h3 {
+    font-size: 2.2rem;
+    color: #b50d1f;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.honour-card p {
+    margin: 0;
+    color: #6c757d;
+}
+
+@media (max-width: 767px) {
+    .fixture-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fixture-date {
+        width: 100%;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+}
