@@ -5,6 +5,22 @@ const liverpoolFixtures = document.querySelector("#liverpoolFixtures");
 const fixturesStatus = document.querySelector("#fixturesStatus");
 const refreshFixturesButton = document.querySelector("#refreshFixtures");
 
+const bannerSlides = document.querySelectorAll(".image-banner-slide");
+if (bannerSlides.length > 1) {
+	let activeBannerSlide = 0;
+	window.setInterval(() => {
+		if (document.hidden) {
+			return;
+		}
+
+		bannerSlides[activeBannerSlide].classList.remove("is-active");
+		bannerSlides[activeBannerSlide].setAttribute("aria-hidden", "true");
+		activeBannerSlide = (activeBannerSlide + 1) % bannerSlides.length;
+		bannerSlides[activeBannerSlide].classList.add("is-active");
+		bannerSlides[activeBannerSlide].setAttribute("aria-hidden", "false");
+	}, 5000);
+}
+
 if (leagueTableBody && leagueTableStatus && refreshLeagueTableButton) {
 	const readerUrl = "https://r.jina.ai/https://footballapi.pulselive.com/football/";
 	const refreshInterval = 5 * 60 * 1000;
