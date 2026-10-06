@@ -2,6 +2,17 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 42px;
+    height: 42px;
+    flex: none;
+}
+
 .hero-panel,
 .panel-card,
 .history-card,
